@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -7,6 +8,7 @@ namespace ProySimulacro1.Models
 {
     public class Country
     {
+        [Key]
         public string name { get; set; }
         public List<string> topLevelDomain { get; set; }
         public string alpha2Code { get; set; }

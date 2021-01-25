@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -7,6 +8,7 @@ namespace ProySimulacro1.Models
 {
     public class Translations
     {
+        [Key]
         public string de { get; set; }
         public string es { get; set; }
         public string fr { get; set; }
