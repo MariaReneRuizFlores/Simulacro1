@@ -1,0 +1,81 @@
+﻿@model IEnumerable<ProySimulacro1.Models.Translations>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.es)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ja)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.it)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.br)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nl)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fa)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.es)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ja)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.it)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.br)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nl)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.hr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fa)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.de }) |
+            @Html.ActionLink("Details", "Details", new { id=item.de }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.de })
+        </td>
+    </tr>
+}
+
+</table>

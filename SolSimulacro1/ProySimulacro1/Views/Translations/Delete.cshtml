@@ -1,0 +1,96 @@
+﻿@model ProySimulacro1.Models.Translations
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Translations</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.es)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.es)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ja)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.it)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.it)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.br)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.br)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fa)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
